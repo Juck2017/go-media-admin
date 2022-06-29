@@ -1,0 +1,19 @@
+dispatcher:
+  stream:
+    schema: TCP
+    port: 18001
+  signal:
+    schema: WS
+    port: 6001
+  viewer:
+    schema: WS
+    port: 5000
+app:
+  mode: dev
+  port: 8005
+  log:
+    file: logs/log.log
+    level: debug
+  db:
+    path: db/test.db
+    ddl-auto: update
